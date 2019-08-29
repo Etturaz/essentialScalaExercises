@@ -6,16 +6,16 @@ ThisBuild / organization := "com.github"
 ThisBuild / organizationName := "Etturaz"
 
 val scalaTestVersion = "3.0.8"
-val semanticdbVersion = "4.2.3"
+val semanticdbVersion = "4.2.0"
 
 lazy val root = (project in file("."))
   .settings(
     name := "EssentialScala",
-    libraryDependencies ++= Seq(
-      scalaTest % scalaTestVersion % Test
-    ),
+    libraryDependencies += scalaTest % scalaTestVersion % Test,
+    /*
     addCompilerPlugin(
       "org.scalameta" % "semanticdb-scalac" % semanticdbVersion cross CrossVersion.full
     ),
-    scalacOptions ++= Seq("-Yrangepos", "-unchecked", "-deprecation", "-feature")
+    */
+    scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
   )
