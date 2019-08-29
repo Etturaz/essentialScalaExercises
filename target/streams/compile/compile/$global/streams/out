@@ -1,7 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/home/babbo/devel/study/essential-scala/src/main/scala/adt/calculator/Calculator.scala:9:61: not found: value c[0m
-[0m[[0m[31merror[0m] [0m[0m    lazy val - = (minuend: Calculation, subtrahend: Int) => c match {[0m
-[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/babbo/devel/study/essential-scala/src/main/scala/adt/calculator/Calculator.scala:10:40: not found: value n[0m
-[0m[[0m[31merror[0m] [0m[0m        case Success(v) => Success(v - n)[0m
-[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/babbo/devel/study/essential-scala/src/main/scala/adt/json/Json.scala:27:9: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: SeqEnd[0m
+[0m[[0m[33mwarn[0m] [0m[0m        j match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/babbo/devel/study/essential-scala/src/main/scala/adt/json/Json.scala:31:9: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: ObjectEnd[0m
+[0m[[0m[33mwarn[0m] [0m[0m        o match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

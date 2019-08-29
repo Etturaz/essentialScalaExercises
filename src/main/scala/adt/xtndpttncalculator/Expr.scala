@@ -30,25 +30,27 @@ sealed trait Expr {
         }
       case Div(lhs, rhs) =>
         rhs.eval match {
-          case Failure(reason)  => Failure(reason)
-          case Success(divisor) => divisor match {
+          case Failure(reason) => Failure(reason)
+          case Success(divisor) =>
+            divisor match {
               case divisor if divisor == 0 => Failure("Division by zero!")
-              case divisor => lhs.eval match {
-                  case Failure(reason) => Failure(reason)
-                  case Success(dividend) => Success(dividend / divisor) 
-              }
-          }
+              case divisor =>
+                lhs.eval match {
+                  case Failure(reason)   => Failure(reason)
+                  case Success(dividend) => Success(dividend / divisor)
+                }
+            }
         }
       case Sqrt(base) =>
         base.eval match {
-            case Failure(reason) => Failure(reason)
-            case Success(radicand) => radicand match {
-                case _ if radicand < 0 => Failure("Radicand must be ≥ 0")
-                case _ => Success(math.sqrt(radicand))
+          case Failure(reason) => Failure(reason)
+          case Success(radicand) =>
+            radicand match {
+              case _ if radicand < 0 => Failure("Radicand must be ≥ 0")
+              case _                 => Success(math.sqrt(radicand))
             }
         }
     }
-
 }
 
 final case class Number(value: Double) extends Expr
