@@ -1,4 +1,4 @@
-[debug] [essential-scala-build-build] Classpath dependencies List()
-[debug] [essential-scala-build-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'essential-scala-build-build' to '/home/babbo/devel/study/essential-scala/project/project/.bloop/essential-scala-build-build.json'
-[success] Generated .bloop/essential-scala-build-build.json
+[debug] [essentialscalaexercises-build-build] Classpath dependencies List()
+[debug] [essentialscalaexercises-build-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'essentialscalaexercises-build-build' to '/home/babbo/devel/tests/essentialScalaExercises/project/project/.bloop/essentialscalaexercises-build-build.json'
+[success] Generated .bloop/essentialscalaexercises-build-build.json
